@@ -3,21 +3,43 @@
         <div class="flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2">
                 <div class="bg-blue-600 p-2 rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12v5c0 3 2.5 5 5 5s5-2 5-5v-5"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12v5c0 3 2.5 5 5 5s5-2 5-5v-5"/></svg>
                 </div>
                 <span class="text-2xl font-bold text-slate-800">TeachMeFinance</span>
             </a>
             <nav class="hidden md:flex items-center space-x-8 text-slate-600 font-medium">
                 <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
-                <a href="year-1.html" class="hover:text-blue-600 transition-colors">Year 1</a>
-                <a href="year-2.html" class="hover:text-blue-600 transition-colors">Year 2</a>
-                <a href="year-3.html" class="hover:text-blue-600 transition-colors">Year 3</a>
-                 <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
-                  <a href="contact.html" class="hover:text-blue-600 transition-colors">Contact</a>
+                
+                <!-- Year 1 Nav Item with Dropdown -->
+                <div id="year-1-nav" class="relative py-2">
+                    <a href="year-1.html" class="hover:text-blue-600 transition-colors">Year 1</a>
+                    <div id="year-1-dropdown" class="hidden absolute top-full left-1/2 -translate-x-1/2 pt-2 w-96 bg-white rounded-lg shadow-xl z-50 border border-slate-100">
+                        <!-- Content will be injected by script.js -->
+                    </div>
+                </div>
+
+                <!-- Year 2 Nav Item with Dropdown -->
+                <div id="year-2-nav" class="relative py-2">
+                    <a href="year-2.html" class="hover:text-blue-600 transition-colors">Year 2</a>
+                    <div id="year-2-dropdown" class="hidden absolute top-full left-1/2 -translate-x-1/2 pt-2 w-96 bg-white rounded-lg shadow-xl z-50 border border-slate-100">
+                        <!-- Content will be injected by script.js -->
+                    </div>
+                </div>
+
+                <!-- Year 3 Nav Item with Dropdown -->
+                <div id="year-3-nav" class="relative py-2">
+                    <a href="year-3.html" class="hover:text-blue-600 transition-colors">Year 3</a>
+                    <div id="year-3-dropdown" class="hidden absolute top-full left-1/2 -translate-x-1/2 pt-2 w-96 bg-white rounded-lg shadow-xl z-50 border border-slate-100">
+                        <!-- Content will be injected by script.js -->
+                    </div>
+                </div>
+
+                <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-600 transition-colors">Contact</a>
             </nav>
             <div class="md:hidden">
                 <button id="menu-toggle" class="text-slate-800 hover:text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
         </div>
@@ -27,8 +49,8 @@
                 <a href="year-1.html" class="hover:text-blue-600 transition-colors">Year 1</a>
                 <a href="year-2.html" class="hover:text-blue-600 transition-colors">Year 2</a>
                 <a href="year-3.html" class="hover:text-blue-600 transition-colors">Year 3</a>
-                 <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
-                  <a href="contact.html" class="hover:text-blue-600 transition-colors">Contact</a>
+                <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-blue-600 transition-colors">Contact</a>
             </nav>
         </div>
     </div>
