@@ -236,7 +236,7 @@ const curriculum = {
                 </ul>`
         },
         {
-            title: "Income Tax – Law and Practice",
+            title: "Income Tax Law and Practice",
             description: "This course provides essential, practical knowledge of the direct tax system, focusing on the Income Tax Act. It is designed to be highly practical, moving beyond theory to the actual computation of tax liability for different entities. For a finance professional, a working knowledge of taxation is indispensable for financial planning, investment analysis (as taxes affect returns), and corporate financial reporting. The curriculum systematically covers the key definitions, the five heads of income, and the procedures for calculating and filing income tax returns.",
             details: `
                 <h2 class="text-3xl font-bold">Income Tax – Law and Practice</h2>

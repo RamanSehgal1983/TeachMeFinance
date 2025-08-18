@@ -210,3 +210,60 @@ body {
 .pl-5 {
     padding-left: 1.25rem;
 }
+/* Special classes */
+.hero-gradient {
+    background-image: linear-gradient(to right, #3b82f6, #6366f1);
+}
+
+/* Custom styles for the detailed subject page content */
+.prose-custom h2 {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #1e293b; /* text-slate-800 */
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e2e8f0; /* border-slate-200 */
+}
+.prose-custom h3 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 600; /* font-semibold */
+    color: #334155; /* text-slate-700 */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.prose-custom h4 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #475569; /* text-slate-600 */
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.prose-custom p, .prose-custom ul, .prose-custom ol, .prose-custom table {
+    color: #334155; /* text-slate-700 */
+    line-height: 1.75;
+}
+.prose-custom ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+.prose-custom li {
+    margin-bottom: 0.5rem;
+}
+.prose-custom strong {
+    color: #0f172a; /* text-slate-900 */
+}
+.prose-custom table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+}
+.prose-custom th, .prose-custom td {
+    border: 1px solid #cbd5e1; /* border-slate-300 */
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+.prose-custom th {
+    background-color: #f1f5f9; /* bg-slate-100 */
+    font-weight: 600;
+}

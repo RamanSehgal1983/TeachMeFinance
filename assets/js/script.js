@@ -19,14 +19,21 @@ document.addEventListener("DOMContentLoaded", function() {
             // Generate the HTML for the first column.
             const column1Html = `
                 <div class="p-4">
-                    ${column1Subjects.map(subject => `<a href="#" class="block text-slate-700 hover:text-blue-600 py-1 rounded-md transition-colors">${subject.title}</a>`).join('')}
+                    ${column1Subjects.map(subject => {
+                        // Create a URL-friendly version of the title (e.g., "Principles of Management" -> "principles-of-management.html")
+                        const subjectUrl = subject.title.toLowerCase().replace(/ & /g, ' and ').replace(/ /g, '-') + '.html';
+                        return `<a href="${subjectUrl}" class="block text-slate-700 hover:text-blue-600 py-1 rounded-md transition-colors">${subject.title}</a>`;
+                    }).join('')}
                 </div>
             `;
             
             // Generate the HTML for the second column.
             const column2Html = `
                 <div class="p-4">
-                    ${column2Subjects.map(subject => `<a href="#" class="block text-slate-700 hover:text-blue-600 py-1 rounded-md transition-colors">${subject.title}</a>`).join('')}
+                    ${column2Subjects.map(subject => {
+                        const subjectUrl = subject.title.toLowerCase().replace(/ & /g, ' and ').replace(/ /g, '-') + '.html';
+                        return `<a href="${subjectUrl}" class="block text-slate-700 hover:text-blue-600 py-1 rounded-md transition-colors">${subject.title}</a>`;
+                    }).join('')}
                 </div>
             `;
 
