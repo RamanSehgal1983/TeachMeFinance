@@ -91,6 +91,12 @@ document.addEventListener("DOMContentLoaded", function() {
         // This code runs *after* the header has been loaded into the page.
         setupDropdowns();
         
+        // Add padding to the body to account for the fixed header
+        const header = document.querySelector('header');
+        if (header) {
+            document.body.style.paddingTop = `${header.offsetHeight}px`;
+        }
+
         // Re-initialize the mobile menu toggle functionality.
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');

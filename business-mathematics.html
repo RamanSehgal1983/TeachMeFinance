@@ -53,39 +53,92 @@
         <article class="prose-custom max-w-4xl mx-auto">
             
             <h2>Introduction: Mathematics for Data-Driven Decisions</h2>
-            <p>Business Mathematics is engineered to provide students with the quantitative tools necessary for data-driven decision-making in a commercial context. The curriculum intentionally bridges abstract mathematical theory with concrete business applications, ensuring you grasp the practical relevance of each concept. The progression is designed to build a strong analytical foundation, preparing you for advanced quantitative subjects in later years.</p>
+            <p>Business Mathematics is engineered to provide students with the quantitative tools necessary for data-driven decision-making in a commercial context. The curriculum intentionally bridges abstract mathematical theory with concrete business applications, ensuring you grasp the practical relevance of each concept. The progression is designed to build a strong analytical foundation, preparing you for advanced quantitative subjects in later years. In a world awash with data, the ability to model, analyze, and interpret quantitative information is no longer a niche skill but a core managerial competency.</p>
 
             <h2>Module 1: Foundational Algebraic Concepts</h2>
-            <p>This part revisits and strengthens the algebraic skills necessary for all subsequent topics, with a strong emphasis on applying these techniques to business problems.</p>
+            <p>This part revisits and strengthens the algebraic skills necessary for all subsequent topics. It moves beyond pure theory to emphasize the application of these techniques in solving real-world business problems, from market analysis to financial planning.</p>
             <ul>
-                <li><strong>Theory of Sets:</strong> Covers basic set theory, operations like union and intersection, and their visualization through Venn diagrams, providing a foundation for logical classification.</li>
-                <li><strong>Equations:</strong> Focuses on solving Linear, Quadratic, and Simultaneous equations, with direct application to business problems like break-even analysis.</li>
-                <li><strong>Ratios, Proportions, and Percentages:</strong> Covers practical business calculations involving ratios and percentages, such as calculating commission, brokerage, and trade discounts.</li>
+                <li><strong>Theory of Sets:</strong> A set is a well-defined collection of distinct objects. This foundational concept is used in business to classify and analyze data. We cover basic operations like <strong>Union</strong> (elements in either set), <strong>Intersection</strong> (elements in both sets), <strong>Difference</strong>, and <strong>Complement</strong>. Venn diagrams are used to visualize these relationships. A practical application is in market research, where sets can represent customers who buy product A, product B, or both, helping to analyze consumer behavior and market segmentation.</li>
+                <li><strong>Equations:</strong> Equations are the cornerstone of modeling business relationships.
+                    <ul>
+                        <li><strong>Linear Equations:</strong> Equations of the form y = mx + c are used to model relationships like cost functions (Total Cost = Fixed Cost + Variable Cost per unit * Quantity) and revenue functions.</li>
+                        <li><strong>Quadratic Equations:</strong> Equations involving a squared term are used to model profit curves, which often have a parabolic shape.</li>
+                        <li><strong>Simultaneous Equations:</strong> A system of two or more equations is used to find a point where multiple conditions are met. The most common business application is <strong>Break-Even Analysis</strong>, where we solve the Total Revenue and Total Cost equations simultaneously to find the quantity at which Profit = 0 (i.e., Total Revenue = Total Cost). This is a critical calculation for any new venture.</li>
+                    </ul>
+                </li>
+                <li><strong>Ratios, Proportions, and Percentages:</strong> These are the tools of everyday business arithmetic. They are used for calculating commissions, brokerage fees, trade discounts, and cash discounts. Understanding percentages is fundamental for analyzing financial statements (e.g., calculating profit margins), understanding interest rates, and interpreting statistical data.</li>
             </ul>
 
             <h2>Module 2: Matrix Algebra and Determinants</h2>
-            <p>This section introduces a powerful tool for handling and solving large systems of linear equations, which are common in business modeling and optimization problems.</p>
+            <p>This section introduces matrices, a powerful tool for organizing data and solving large systems of linear equations. They are widely used in fields like operations research, economics, and computer graphics to model complex systems.</p>
             <ul>
-                <li><strong>Introduction to Matrices:</strong> Defines a matrix and covers different types and the algebra of matrices, including addition, subtraction, and multiplication.</li>
-                <li><strong>Determinants and Inverse of a Matrix:</strong> Explains how to calculate the determinant and find the inverse of a matrix, demonstrating its application in solving systems of linear equations.</li>
+                <li><strong>Introduction to Matrices:</strong> A matrix is a rectangular array of numbers arranged in rows and columns. We cover different types of matrices (row, column, square, identity) and the algebra of matrices, including:
+                    <ul>
+                        <li><strong>Addition and Subtraction:</strong> Performed element-wise on matrices of the same dimension.</li>
+                        <li><strong>Scalar Multiplication:</strong> Multiplying each element of a matrix by a constant.</li>
+                        <li><strong>Matrix Multiplication:</strong> A more complex operation used to combine linear transformations, with wide applications in business modeling.</li>
+                    </ul>
+                </li>
+                <li><strong>Determinants and Inverse of a Matrix:</strong>
+                    <ul>
+                        <li><strong>Determinant:</strong> A unique scalar value associated with a square matrix. It provides important information about the matrix; for example, a non-zero determinant indicates that the matrix has an inverse.</li>
+                        <li><strong>Inverse of a Matrix:</strong> Similar to a reciprocal for a number, the inverse of a matrix (if it exists) is used in matrix division.</li>
+                        <li><strong>Application in Solving Equations:</strong> The primary application for managers is solving systems of linear equations. For example, a company might need to determine the production levels for three different products, subject to constraints on machine hours, labor hours, and raw materials. This can be modeled as a system of three linear equations and solved efficiently using methods like the <strong>Matrix Inverse Method</strong> or <strong>Cramer's Rule</strong>.</li>
+                    </ul>
+                </li>
             </ul>
 
             <h2>Module 3: Commercial Arithmetic</h2>
-            <p>This part focuses on the specific mathematical applications used in finance and commerce, which are fundamental to all financial calculations.</p>
+            <p>This part focuses on the specific mathematical applications used in finance and commerce. These calculations form the basis of all investment, lending, and valuation decisions.</p>
             <ul>
-                <li><strong>Simple and Compound Interest:</strong> Covers the calculation of interest, which is fundamental to all finance, including formulas for both simple and compound interest.</li>
-                <li><strong>Annuities:</strong> A critical topic for finance, this introduces the concepts of present value and future value of an annuity, used in loan amortization, sinking funds, and investment valuation.</li>
+                <li><strong>Simple and Compound Interest:</strong>
+                    <ul>
+                        <li><strong>Simple Interest:</strong> Interest is calculated only on the principal amount. It is used for short-term loans. Formula: I = P * r * t.</li>
+                        <li><strong>Compound Interest:</strong> Interest is calculated on the principal amount plus the accumulated interest from previous periods. It is the basis of all long-term finance and investments. The effect of compounding can lead to dramatic growth in value over time. Formula: A = P(1 + r/n)^(nt).</li>
+                    </ul>
+                </li>
+                <li><strong>Annuities:</strong> An annuity is a series of equal payments made at regular intervals. This is a critical topic for finance, with applications in everything from personal savings to corporate finance.
+                    <ul>
+                        <li><strong>Types of Annuities:</strong> We distinguish between an ordinary annuity (payments at the end of each period) and an annuity due (payments at the beginning).</li>
+                        <li><strong>Future Value of an Annuity:</strong> This calculation determines the total value of a series of payments at a future date. It is used for planning retirement savings or calculating the maturity value of a recurring deposit.</li>
+                        <li><strong>Present Value of an Annuity:</strong> This calculation determines the current worth of a series of future payments. Its most common application is in <strong>loan amortization</strong>, where it is used to calculate the Equated Monthly Installment (EMI) for a loan. It is also used in capital budgeting to value investment projects and in bond valuation.</li>
+                        <li><strong>Sinking Funds:</strong> A fund created by a company to set aside revenue over time to fund a future capital expense or repay a long-term debt. Annuity formulas are used to calculate the periodic payments required.</li>
+                    </ul>
+                </li>
             </ul>
 
             <h2>Module 4: Introduction to Calculus and its Applications</h2>
-            <p>This section introduces the foundational concepts of calculus, the mathematics of change, and demonstrates its immense power in business optimization.</p>
+            <p>This section introduces the foundational concepts of calculus, the mathematics of change. While it may seem abstract, calculus is one of the most powerful tools for business optimization, helping managers make decisions that maximize profit and minimize cost.</p>
             <ul>
-                <li><strong>Differential Calculus (Differentiation):</strong> Introduces the concept of a derivative as a rate of change. It covers the basic rules of differentiation and applies them to business concepts like finding marginal cost and marginal revenue.</li>
-                <li><strong>Maxima and Minima:</strong> A crucial application of differentiation, this introduces the concept of using derivatives to find maxima and minima, which is applied to profit maximization and cost minimization problems.</li>
-                <li><strong>Integral Calculus (Integration):</strong> Presents integration as the reverse of differentiation. Its primary business application at this level is to calculate total cost or total revenue functions when the corresponding marginal functions are known.</li>
+                <li><strong>Differential Calculus (Differentiation):</strong> Differentiation is the process of finding the derivative of a function. The derivative represents the instantaneous rate of change of one variable with respect to another.
+                    <ul>
+                        <li><strong>Concept:</strong> It is the slope of the tangent line to a function at a given point.</li>
+                        <li><strong>Business Application (Marginal Analysis):</strong> In economics and business, the derivative is used to find marginal concepts. <strong>Marginal Cost (MC)</strong> is the derivative of the Total Cost function and represents the cost of producing one additional unit. <strong>Marginal Revenue (MR)</strong> is the derivative of the Total Revenue function and represents the revenue from selling one additional unit.</li>
+                    </ul>
+                </li>
+                <li><strong>Maxima and Minima:</strong> This is a crucial application of differentiation. By finding where the derivative of a function is equal to zero, we can identify the points where the function reaches a maximum or minimum value.
+                    <ul>
+                        <li><strong>Concept:</strong> We use the first and second derivative tests to find and classify these critical points.</li>
+                        <li><strong>Business Application (Optimization):</strong> This is used extensively in business to solve optimization problems. The most common application is <strong>profit maximization</strong>. A firm's profit is maximized at the level of output where Marginal Revenue equals Marginal Cost (MR = MC). We can also use these techniques for <strong>cost minimization</strong>, helping a firm find the production level that results in the lowest average cost.</li>
+                    </ul>
+                </li>
+                <li><strong>Integral Calculus (Integration):</strong> Integration is the reverse process of differentiation. It is used to find a total function when the rate of change (the marginal function) is known.
+                    <ul>
+                        <li><strong>Concept:</strong> It can be thought of as finding the area under a curve.</li>
+                        <li><strong>Business Application:</strong> Its primary application at this level is to calculate total functions from marginal functions. If a company knows its Marginal Cost function, it can use integration to find the Total Cost function. Similarly, the Total Revenue function can be found by integrating the Marginal Revenue function. This is essential for making decisions about pricing and production levels.</li>
+                    </ul>
+                </li>
             </ul>
 
         </article>
+
+        <div class="mt-20 pt-10 border-t border-slate-200">
+             <div class="prose-custom max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-800">Sources Covered</h2>
+                <p class="text-sm text-slate-500">The content on this page was synthesized from a wide range of academic and business sources covering the core curriculum of a first-year BBA "Business Mathematics" course.</p>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer Placeholder -->
