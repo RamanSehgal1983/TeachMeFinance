@@ -1,0 +1,1 @@
+CookieYes - for consent management. Window pops up to let user select his/her options to accept or reject cookies
