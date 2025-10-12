@@ -86,16 +86,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Load the header and, once it's loaded, set up the dropdowns.
-    loadComponent('header-placeholder', 'header.html', () => {
-        // This code runs *after* the header has been loaded into the page.
-        setupDropdowns();
-        
-        // Add padding to the body to account for the fixed header
+    // This function adjusts the body padding to account for the fixed header's height.
+    const adjustBodyPadding = () => {
         const header = document.querySelector('header');
         if (header) {
             document.body.style.paddingTop = `${header.offsetHeight}px`;
         }
+    };
+
+    // Load the header and, once it's loaded, set up the dropdowns and other functionalities.
+    loadComponent('header-placeholder', 'header.html', () => {
+        // This code runs *after* the header has been loaded into the page.
+        setupDropdowns();
+        
+        // Set the initial body padding and then update it on window resize.
+        adjustBodyPadding();
+        window.addEventListener('resize', adjustBodyPadding);
 
         // Re-initialize the mobile menu toggle functionality.
         const menuToggle = document.getElementById('menu-toggle');

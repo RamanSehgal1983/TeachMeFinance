@@ -15,7 +15,7 @@
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    'https://www.googletagmanager.com/gtag/js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NTQJCLWS');</script>
     <!-- End Google Tag Manager -->
     
@@ -45,6 +45,9 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .hero-gradient {
+            background-image: linear-gradient(to right, #3b82f6, #6366f1);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
@@ -56,24 +59,81 @@
     <!-- Header will be loaded here -->
     <div id="header-placeholder"></div>
 
-    <main class="flex-grow container mx-auto px-6 py-12 md:py-20">
-        <div class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-2">About TeachMeFinance</h1>
-            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Our mission is to provide a clear and comprehensive guide to the world of finance for BBA students.</p>
-        </div>
+    <!-- MAIN CONTENT AREA - ADDED 'pt-20' CLASS HERE -->
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">About TeachMeFinance</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-blue-100">Bridging the gap between academic theory and the dynamic world of finance for the next generation of business leaders in India.</p>
+            </div>
+        </section>
 
-        <div class="prose lg:prose-lg mx-auto bg-white p-8 rounded-xl shadow-md">
-            <p>TeachMeFinance was born from a simple idea: to make the complex world of finance accessible to everyone. We believe that financial literacy is a critical skill, and our goal is to empower the next generation of finance leaders with the knowledge they need to succeed.</p>
-            <p>Our curriculum guides are carefully crafted to provide a clear and structured overview of the BBA Finance program. We break down complex topics into easy-to-understand concepts, and we provide real-world examples to help you connect the dots.</p>
-            <p>Whether you're a prospective student, a current student, or a recent graduate, we hope that TeachMeFinance will be a valuable resource for you on your journey.</p>
-        </div>
+        <!-- Main Content Area -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                
+                <!-- Our "Why" Section -->
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold text-slate-900">Our Purpose</h2>
+                    <p class="mt-4 text-lg text-slate-600">The journey through a BBA in Finance is demanding. Students are often faced with dense textbooks and complex theories, with little context on how these concepts apply to the fast-paced Indian financial industry. TeachMeFinance was created to be the solution: a clear, structured, and practical guide that translates curriculum into career readiness.</p>
+                </div>
+
+                <!-- Our Mission Section -->
+                <div class="mt-20">
+                    <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">What We Aim to Achieve</h2>
+                    <div class="grid md:grid-cols-3 gap-10 text-center">
+                        
+                        <!-- Goal 1: Demystify the Curriculum -->
+                        <div class="bg-slate-50 p-8 rounded-lg">
+                            <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-5.22-6.22l10.44 0" /></svg>
+                            </div>
+                            <h3 class="mt-6 text-xl font-bold text-slate-800">Demystify the Curriculum</h3>
+                            <p class="mt-2 text-slate-600">We provide a structured, year-by-year breakdown of the BBA Finance syllabus. Our goal is to make core subjects like Corporate Finance, Investment Analysis, and Financial Derivatives easy to understand and navigate.</p>
+                        </div>
+
+                        <!-- Goal 2: Bridge Theory and Practice -->
+                        <div class="bg-slate-50 p-8 rounded-lg">
+                            <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                            </div>
+                            <h3 class="mt-6 text-xl font-bold text-slate-800">Bridge Theory and Practice</h3>
+                            <p class="mt-2 text-slate-600">Knowledge is most powerful when applied. Through our upcoming blog and in-depth articles, we connect textbook concepts to real-world events, Indian market trends, and the skills that top finance companies are looking for.</p>
+                        </div>
+                        
+                        <!-- Goal 3: Empower Future Leaders -->
+                        <div class="bg-slate-50 p-8 rounded-lg">
+                            <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                            </div>
+                            <h3 class="mt-6 text-xl font-bold text-slate-800">Empower Future Leaders</h3>
+                            <p class="mt-2 text-slate-600">Our ultimate mission is to empower you. We aim to be your trusted companion throughout your degree, providing the clarity and confidence you need to excel in your exams and launch a successful career in finance.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Who We Are Section -->
+                <div class="mt-20 max-w-4xl mx-auto text-center bg-white p-10 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-slate-900">Who We Are</h2>
+                    <p class="mt-4 text-lg text-slate-600">TeachMeFinance is a passion project run by a team of finance professionals and educators who have navigated both the academic and corporate landscapes in India. We saw a need for a resource that speaks the language of students while maintaining the standards of the industry. We are committed to creating high-quality, relevant, and accessible content to support your financial education journey.</p>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- Footer will be loaded here -->
     <div id="footer-placeholder"></div>
 
-    <!-- Link to your data and script files -->
-    <script src="assets/js/data.js"></script>
+    <!-- Hidden placeholders for script.js to prevent errors -->
+    <div id="year-1-grid" class="hidden"></div>
+    <div id="year-2-grid" class="hidden"></div>
+    <div id="year-3-grid" class="hidden"></div>
+
+    <!-- Link to your script file -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+
